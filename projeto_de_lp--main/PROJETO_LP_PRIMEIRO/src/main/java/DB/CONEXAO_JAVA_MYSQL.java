@@ -12,7 +12,7 @@ import java.sql.SQLException;
  */
 public class CONEXAO_JAVA_MYSQL {
      // Ajuste a URL/USER/PASSWORD conforme seu ambiente
-    private static final String URL = "jdbc:mysql://localhost:3306/banco_de_dados_projeto_de_LP";
+    private static final String URL = "jdbc:mysql://localhost:3306/banco_de_dados_projeto_de_LP.sql_biblioteca";
     private static final String USER = "root";
     private static final String PASSWORD = "2201";
 

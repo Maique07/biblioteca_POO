@@ -45,8 +45,6 @@ public class PAINEL_INICIAL extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         cadastrar_usuario = new javax.swing.JButton();
         LISTAR_USUARIO = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -56,110 +54,108 @@ public class PAINEL_INICIAL extends javax.swing.JFrame {
         LISTAR_EMPRESTIMO = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
-        jLabel1.setText("BIBLIOTECA VAQUEIRO MG ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 390, -1));
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        jLabel2.setText("SELECIONE 1 DAS OPÇÕES ABAIXO:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
-
+        cadastrar_usuario.setBackground(new java.awt.Color(204, 204, 204));
         cadastrar_usuario.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        cadastrar_usuario.setText("1 - Cadastrar usuário");
+        cadastrar_usuario.setBorder(null);
+        cadastrar_usuario.setContentAreaFilled(false);
         cadastrar_usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cadastrar_usuarioActionPerformed(evt);
             }
         });
-        jPanel1.add(cadastrar_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+        jPanel1.add(cadastrar_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 230, 50));
 
         LISTAR_USUARIO.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        LISTAR_USUARIO.setText("2 - Listar usuários");
+        LISTAR_USUARIO.setContentAreaFilled(false);
         LISTAR_USUARIO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LISTAR_USUARIOActionPerformed(evt);
             }
         });
-        jPanel1.add(LISTAR_USUARIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, -1, -1));
+        jPanel1.add(LISTAR_USUARIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 130, 210, 50));
 
         jButton3.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        jButton3.setText("3 - Cadastrar livro");
+        jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 170, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 220, 50));
 
         LISTAR_LIVRO.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        LISTAR_LIVRO.setText("4 - Listar livros");
+        LISTAR_LIVRO.setContentAreaFilled(false);
         LISTAR_LIVRO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LISTAR_LIVROActionPerformed(evt);
             }
         });
-        jPanel1.add(LISTAR_LIVRO, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 140, -1));
+        jPanel1.add(LISTAR_LIVRO, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 204, 220, 50));
 
         REALIZAR_EMPRESTIMO.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        REALIZAR_EMPRESTIMO.setText("5 - Realizar empréstimo");
+        REALIZAR_EMPRESTIMO.setContentAreaFilled(false);
         REALIZAR_EMPRESTIMO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 REALIZAR_EMPRESTIMOActionPerformed(evt);
             }
         });
-        jPanel1.add(REALIZAR_EMPRESTIMO, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+        jPanel1.add(REALIZAR_EMPRESTIMO, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 274, 220, 50));
 
         REGISTRAR_DEVOLUCAO.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        REGISTRAR_DEVOLUCAO.setText("6 - Registrar devolução");
+        REGISTRAR_DEVOLUCAO.setContentAreaFilled(false);
         REGISTRAR_DEVOLUCAO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 REGISTRAR_DEVOLUCAOActionPerformed(evt);
             }
         });
-        jPanel1.add(REGISTRAR_DEVOLUCAO, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, -1, -1));
+        jPanel1.add(REGISTRAR_DEVOLUCAO, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 274, 220, 50));
 
         LISTAR_EMPRESTIMO.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        LISTAR_EMPRESTIMO.setText("7 - Listar empréstimos");
+        LISTAR_EMPRESTIMO.setContentAreaFilled(false);
         LISTAR_EMPRESTIMO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LISTAR_EMPRESTIMOActionPerformed(evt);
             }
         });
-        jPanel1.add(LISTAR_EMPRESTIMO, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+        jPanel1.add(LISTAR_EMPRESTIMO, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 354, 220, 40));
 
         jButton8.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        jButton8.setText("8 - Listar empréstimos atrasados");
+        jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, -1, -1));
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, -1, 50));
 
         jButton9.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        jButton9.setText("0 - Sair");
+        jButton9.setContentAreaFilled(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 454, 160, 40));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/biblioteca_HP.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 513));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -303,8 +299,7 @@ public class PAINEL_INICIAL extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
